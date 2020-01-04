@@ -1,0 +1,103 @@
+root@jarvis:~# python3
+Python 3.6.9 (default, Nov  7 2019, 10:44:02) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> list = [12,45,67,45,34]                                             # we can give any name to list
+>>> list.
+list.append(   list.clear(    list.copy(     list.count(    list.extend(   list.index(    list.insert(   list.pop(      list.remove(   list.reverse(  list.sort(
+
+>>> list.append(99)                                                     # use to add a value in list
+>>> list
+[12, 45, 67, 45, 34, 99] 
+>>> list.clear()                                                        #to clear list completly
+>>> list
+[]
+
+>>> list = [67,89,34,65,58,24]
+
+#to add multiple value in list
+>>> list.extend([47,66,67,65,90])
+>>> list
+[67, 89, 34, 65, 58, 24, 47, 66, 67, 65, 90]
+
+#to remove an element
+>>> list.remove(65)
+>>> list
+[67, 89, 34, 58, 24, 47, 66, 67, 65, 90]
+>>> list.remove(65)
+>>> list
+[67, 89, 34, 58, 24, 47, 66, 67, 90]
+
+#to check the index of element 
+>>> list.index(66)
+6
+
+>>> len(list)
+9
+
+#for inserting value on a perticular index
+>>> list.insert(2,44)
+>>> list
+[67, 89, 44, 34, 58, 24, 47, 66, 67, 90]
+
+#to remove last element
+>>> list.pop()
+90
+>>> list
+[67, 89, 44, 34, 58, 24, 47, 66, 67]
+
+#to remove element of given index
+>>> list.pop(2)
+44
+>>> list
+[67, 89, 34, 58, 24, 47, 66, 67]
+
+
+>>> list.reverse()
+>>> list
+[89, 67, 67, 66, 58, 47, 34, 24]
+
+>>> list.sort()
+>>> list
+[24, 34, 47, 58, 66, 67, 67, 89]
+
+
+>>> list + [ 'root','example']
+[24, 34, 47, 58, 66, 67, 67, 89, 'root', 'example']
+>>> list
+[24, 34, 47, 58, 66, 67, 67, 89]
+
+
+>>> list.extend(['root',3.5,91])
+>>> list
+[24, 34, 47, 58, 66, 67, 67, 89, 'root', 3.5, 91]
+
+>>> list.sort()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: '<' not supported between instances of 'str' and 'int'
+
+# list can contain all type of variales
+>>> str = [12,22,'hello',4.5]
+>>> div=[str+list]
+>>> div
+[[12, 22, 'hello', 4.5, 24, 34, 47, 58, 66, 67, 67, 89, 'root', 3.5, 91]]
+
+>>> list
+[24, 34, 47, 58, 66, 67, 67, 89, 'root', 3.5, 91]
+
+>>> list.remove('root')
+>>> list
+[24, 34, 47, 58, 66, 67, 67, 89, 3.5, 91]
+
+>>> min(list)
+3.5
+>>> max(list)
+91
+>>> sum(list)
+546.5
+
+>>> list
+[24, 34, 47, 58, 66, 67, 67, 89, 3.5, 91]
+>>> list.count(66)
+1
