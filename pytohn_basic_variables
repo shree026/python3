@@ -1,0 +1,110 @@
+root@jarvis:~# python3
+Python 3.6.9 (default, Nov  7 2019, 10:44:02) 
+[GCC 8.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 2+3                                             #addition
+5
+>>> 10-4                                            #substraction
+6
+>>> 7*9                                             #multiplication
+63
+>>> 14/7                                            #divison 
+2.0
+>>> 18//6                                           #integer_divison or floor_division
+3
+>>> 8+4*7
+36
+>>> 2 ** 6                                          # square of any integer
+64
+>>> (67+56)*5
+615
+>>> 10 % 3                                          #modulas
+1
+>>> 'root'
+'root'
+>>> print('root')                                   #print string
+root
+>>> print('root's password')
+  File "<stdin>", line 1
+    print('root's password')
+                ^
+SyntaxError: invalid syntax
+
+>>> print("root's password")
+root's password
+
+>>> print (r'"root's password"')
+  File "<stdin>", line 1
+    print (r'"root's password"')
+                   ^
+SyntaxError: invalid syntax
+
+>>> print('root's "password"')
+  File "<stdin>", line 1
+    print('root's "password"')
+                ^
+SyntaxError: invalid syntax
+
+>>> print('root\'s "password"')
+root's "password"
+
+>>> print (r'c:/docs')                            #to print raw input
+c:/docs
+
+>>> print ('root + root')
+root + root
+
+>>> 'root'+'root'                                #to print two concurrent string
+'rootroot'
+
+>>> 5*'root'                                     #to print a string multiple times
+'rootrootrootrootroot'
+
+#VARIABLES
+
+>>> x = 19
+>>> x + 5
+24
+>>> y = 34
+
+>>> _ + x                                       # _ is used to provide output from previous results
+43
+>>> _ + x
+62
+>>> x+y
+53
+
+
+#STRING_VARIABLES
+
+>>> name = "root"
+>>> name
+'root'
+>>> name + 'password'
+'rootpassword'
+>>> name + '-password'
+'root-password'
+>>> s= 'password'
+>>> s
+'password'
+>>> s[0]
+'p'
+>>> s[0:]
+'password'
+>>> s[0:5]
+'passw'
+>>> s[0:4]
+'pass'
+>>> s[-1]
+'d'
+>>> s[4:]
+'word'
+>>> 'root' + s[4:]
+'rootword'
+>>> 'root ' + s[4:]
+'root word'
+>>> lenght='legendary'
+>>> lenght
+'legendary'
+>>> len(lenght)                                 #used to find lenght of string
+9
